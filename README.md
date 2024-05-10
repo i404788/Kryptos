@@ -4,11 +4,12 @@ This is a single python3 file which is able to crack K1-K3 (and reproduce key ex
 
 Current status of K4:
 
-- [x] Vig; up to key length 38 is not possible
+- [x] Vig (or key extraction); up to key length 38 is not possible
 - [x] (skip/rot) Transpose incl reverse -> Vig/Cesear; is not possible decoder for key lengths <30
 - [x] Vig -> Tranpose; also not possible for key lengths <32
 
 Vig with higher key length is possible but impossible to validate is it doesn't allow for extrapolation from the known values.
+Vig key extraction did not give a extrapolatable key.
 
 > NOTE: not possible here means that it has been exaustively cracked: vig using the standard table for certain key length; transpose using all possible skips (2->N)
 
